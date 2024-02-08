@@ -1,6 +1,7 @@
 
 
-import Navbar from "../components/Navbar"
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 
 export default function ÜberUns() {
@@ -11,7 +12,7 @@ export default function ÜberUns() {
 
             <div className='site'>
 
-                <div style={{ backgroundColor: 'rgb(250, 250, 250)', height: '100%' }}>
+                <div style={{ backgroundColor: 'rgb(250, 250, 250)', height: '80%' }}>
                     <p style={{ textAlign: 'justify', margin: '0', padding: '20px', paddingTop: '20px' }}>
                         Willkommen bei Zum Sch'tis - dem Ort, an dem Gastfreundschaft auf kulinarische Abenteuer trifft!<br/><br/>
 
@@ -35,6 +36,8 @@ export default function ÜberUns() {
                     </p>
                 </div>
             </div>
+
+			<Footer/>
         </>
     )
 

@@ -12,8 +12,10 @@ export default function Footer() {
 
     return (
         <div className='footer'>
-            <div className='footer-element' onClick={() => navigate('/impressum', { replace: false })}>Impressum</div>
-            <div className='footer-element' onClick={() => navigate('/überuns', { replace: false })}>Über uns</div>
+			<div className='footer-container'>
+				<div className='footer-element' onClick={() => navigate('/impressum', { replace: false })}>Impressum</div>
+				<div className='footer-element' onClick={() => navigate('/überuns', { replace: false })}>Über uns</div>
+			</div>
         </div>
     )
 
