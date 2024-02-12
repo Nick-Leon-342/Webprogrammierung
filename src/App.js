@@ -14,6 +14,8 @@ import Veranstaltungen from './pages/Veranstaltungen'
 export default function App() {
 
 	return (
+		// <div style={{ overflow: 'hidden', scrollbarGutter: 'stable' }}>
+		// </div>
 		<Router>
 			<Routes>
 
