@@ -25,6 +25,10 @@ body {
 input {
 	outline: none;
 	min-height: 20px;
+	color: var(--navbar-color);
+	border: 1px solid var(--navbar-color);
+	border-radius: 5px;
+	padding: 4px 7px;
 }
 
 #root {
@@ -121,11 +125,6 @@ input {
 
 
 
-
-.impressum {
-
-}
-
 .carousel {
 	height: 500px;
 	position: relative;
@@ -203,6 +202,39 @@ input {
 
 
 
+.lieferservice-container {
+	display: flex;
+	justify-content: space-between;
+	gap: 5px;
+	margin-bottom: 10px;
+}
+
+.add-container {
+	display: flex;
+	justify-content: right;
+}
+
+.add-button {
+	display: flex;
+	justify-content: center;
+	border: 1px solid var(--navbar-color);
+	border-radius: 5px;
+	height: 20px;
+	width: 30px;
+	transition: scale .3s;
+}
+
+.add-button:hover {
+	scale: 1.05;
+}
+
+.add-button:active {
+	scale: .95;
+}
+
+
+
+
 
 
 
@@ -270,6 +302,8 @@ input {
 .button:active {
     transform: scale(0.98);
 }
+
+
 
 
 

@@ -104,6 +104,7 @@ export default function Reservierung() {
 								>Anzahl an Personen:</label>
 							<input 
 								type='number' 
+								min={1}
 								style={{ 
 									outline: 'none', 
 									width: '50px', 
