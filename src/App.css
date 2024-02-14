@@ -24,7 +24,7 @@ body {
 
 input {
 	outline: none;
-	min-height: 20px;
+	min-height: 30px;
 	color: var(--navbar-color);
 	border: 1px solid var(--navbar-color);
 	border-radius: 5px;
@@ -71,7 +71,7 @@ input {
 
 .navbar-element {
 	padding: 10px;
-	font-size: 15px;
+	font-size: 25px;
 	color: var(--navbar-color);
 	cursor: pointer;
 }
@@ -102,10 +102,10 @@ input {
 
 .footer-container {
 	border-top: 1px solid var(--navbar-underline-color);
-	font-size: 12px;
+	font-size: 20px;
 	display: flex;
 	justify-content: space-evenly;
-	padding-top: 20px;
+	padding-top: 10px;
 }
 
 .footer-element {
@@ -197,61 +197,8 @@ input {
 .events-text {
 	color: var(--color-light);
 	margin-bottom: 100px;
+	font-size: 20px;
 }
-
-
-
-
-.lieferservice-container {
-	display: flex;
-	justify-content: space-between;
-	gap: 5px;
-	margin-bottom: 10px;
-}
-
-.add-container {
-	display: flex;
-	justify-content: right;
-}
-
-.add-button {
-	display: flex;
-	justify-content: center;
-	border: 1px solid var(--navbar-color);
-	border-radius: 5px;
-	height: 20px;
-	width: 30px;
-	transition: scale .3s;
-}
-
-.add-button:hover {
-	scale: 1.05;
-}
-
-.add-button:active {
-	scale: .95;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -282,6 +229,7 @@ input {
 
 .button {
 	font-size: 20px;
+	height: 50px;
 	border-radius: 5px;
 	border: none;
 	box-shadow: 0px 0px 3px 0px var(--navbar-color);
@@ -312,15 +260,15 @@ input {
 .inputfield {
 	position: relative;
 	display: flex;
-	height: 42px;
-	width: 400px;
+	height: 62px;
+	width: 450px;
 	margin: 15px 0;
 }
 
 .inputfield input {
-	width: 358px;
-	height: 20px;
-	font-size: 18px;
+	width: 408px;
+	height: 30px;
+	font-size: 20px;
 	color: var(--navbar-color);
     padding: 15px 20px;
     background: transparent;
@@ -331,10 +279,10 @@ input {
 
 .inputfield label {
 	position: absolute;
-	top: 60%;
+	top: 50%;
 	margin-left: 15px;
 	transform: translateY(-50%);
-	font-size: 14px;
+	font-size: 16px;
 	pointer-events: none;
 	padding: 0 5px;
 	transition: font-size .5s, top .5s;
@@ -343,6 +291,6 @@ input {
 .inputfield input:focus~label, 
 .inputfield input:not(:placeholder-shown)~label {
 	top: 0;
-	font-size: 10px;
+	font-size: 12px;
 	background-color: white;
 }

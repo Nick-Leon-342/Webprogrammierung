@@ -34,7 +34,7 @@ export default function Reservierung() {
 
 					<div style={{ display: 'flex', flexDirection: 'column' }}>
 
-						<h2>Reservierung</h2>
+						<h1>Reservierung</h1>
 
 						<FancyInput
 							id='FirstName'
@@ -82,7 +82,7 @@ export default function Reservierung() {
 						>
 							<label 
 								style={{ 
-									fontSize: '15px', 
+									fontSize: '20px', 
 									color: 'var(--navbar-color)' 
 									}}
 								>Datum:</label>
@@ -98,7 +98,7 @@ export default function Reservierung() {
 						>
 							<label 
 								style={{ 
-									fontSize: '15px', 
+									fontSize: '20px', 
 									color: 'var(--navbar-color)' 
 									}}
 								>Anzahl an Personen:</label>
@@ -108,7 +108,6 @@ export default function Reservierung() {
 								style={{ 
 									outline: 'none', 
 									width: '50px', 
-									
 									color: 'var(--navbar-color)' 
 								}}
 							/>
