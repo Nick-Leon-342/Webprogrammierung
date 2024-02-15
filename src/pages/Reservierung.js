@@ -6,7 +6,8 @@ import Footer from '../components/Footer'
 import FancyInput from '../components/FancyInput'
 import DatePicker from 'react-datepicker'
 
-import "react-datepicker/dist/react-datepicker.css"
+import 'react-datepicker/dist/react-datepicker.css'
+import axios from '../api/axios'
 
 
 export default function Reservierung() {
@@ -18,6 +19,45 @@ export default function Reservierung() {
 
 	const [ date, setDate ] = useState()
 	const [ numberOfPeople, setNumberOfPeople ] = useState()
+
+
+
+
+	const send = () => {
+
+		//Eingaben prüfen
+		if(!firstName || !lastName || !email || !phone || !date || !numberOfPeople) {
+			return window.alert('Bitte alles ausfüllen!')
+		}
+
+		const json = {
+			firstName,
+			lastName,
+			email,
+			phone,
+			date,
+			numberOfPeople
+		}
+
+		//Daten an den Server senden
+		axios.post('/reservierung', json).then((res) => {
+			
+			window.alert('Die Anfrage für die Reservierung wurde erfolgreich eingereicht!')
+
+			//Eingaben löschen
+			setFirstName('')
+			setLastName('')
+			setEmail('')
+			setPhone('')
+			setDate()
+			setNumberOfPeople('')
+
+		}).catch((err) => {
+			console.log(err)
+			window.alert('Es ist ein Fehler aufgetreten.')
+		})
+
+	}
 
 
 
@@ -115,7 +155,7 @@ export default function Reservierung() {
 							/>
 						</div>
 
-						<button className='button'>Reservierung abschicken</button>
+						<button onClick={send} className='button'>Reservierung abschicken</button>
 
 					</div>
 

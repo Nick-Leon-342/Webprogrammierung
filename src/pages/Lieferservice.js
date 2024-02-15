@@ -7,6 +7,8 @@ import Footer from '../components/Footer'
 import { useState } from 'react'
 import { v4 } from 'uuid'
 
+import axios from '../api/axios'
+
 
 export default function Lieferservice() {
     
@@ -24,18 +26,21 @@ export default function Lieferservice() {
 
 
 
+	//Eine Bestellung hinzufügen
 	const add = () => {
 		const tmp = [...list_orders]
 		tmp.push({ ID: v4, OrderNR: undefined, AdditionalInfo: '' })
 		setList_orders(tmp)
 	}
 
+	//Eine Bestellung löschen
 	const remove = (index) => {
 		const tmp = [...list_orders]
 		tmp.splice(index, 1)
 		setList_orders(tmp)
 	}
 
+	//Die Bemerkung einer Bestellung ändern 
 	const handleChange = (v, id) => {
 		const tmp = [...list_orders]
 		for(const e of tmp) {
@@ -47,11 +52,12 @@ export default function Lieferservice() {
 		setList_orders(tmp)
 	}
 
-	const handleSend = () => {
+	//Bestellung absenden
+	const send = () => {
 
 		//Eingaben überprüfen
 		if(!firstName || !lastName || !phone || !street || !houseNumber || !postcode || !city || list_orders.length <= 0) {
-			window.alert('Bitte alles ausfüllen!')
+			return window.alert('Bitte alles ausfüllen!')
 		}
 
 		for(const e of list_orders) {
@@ -72,14 +78,25 @@ export default function Lieferservice() {
 			list_orders
 		}
 
+		//Daten zum Backend schicken
+		axios.post('/lieferservice', json).then(() => {
 
+			window.alert('Die Anfrage für den Lieferservice wurde erfolgreich eingereicht!')
 
+			//Eingaben löschen
+			setFirstName('')
+			setLastName('')
+			setPhone('')
+			setStreet('')
+			setHouseNumber('')
+			setPostcode('')
+			setCity('')
+			setList_orders([])
 
-
-
-		//
-
-
+		}).catch((err) => {
+			console.log(err)
+			window.alert('Es ist ein Fehler aufgetreten!')
+		})
 
 	}
 
@@ -123,6 +140,8 @@ export default function Lieferservice() {
 
 						<br/>
 
+						<h3>Bestellung</h3>
+
 						<div className='add-container'>
 							<div className='add-button'>
 								<svg fill='var(--navbar-color)' onClick={add} height='30' viewBox="0 -960 960 960"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg>
@@ -139,7 +158,7 @@ export default function Lieferservice() {
 							))}
 						</ul>
 
-						<button className='button' onClick={handleChange}>Bestellung abschicken</button>
+						<button className='button' onClick={send}>Bestellung abschicken</button>
 
 					</div>
 

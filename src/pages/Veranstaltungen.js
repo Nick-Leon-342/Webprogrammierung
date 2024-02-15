@@ -9,6 +9,8 @@ import { useState } from 'react'
 
 export default function Veranstaltungen() {
 
+	//Zwei Dummy-Veranstaltungen
+	//Könnten auch vom Server übertragen werden
 	const list_slide = [
 		{
 			Image: <img src={Karaoke} alt='karaoke' width='100%'/>,
@@ -54,6 +56,7 @@ export default function Veranstaltungen() {
 		}
 	]
 
+	//Welche Veranstaltung angezeigt werden soll
 	const [ currentSlide, setCurrentSlide ] = useState(0)
     
 

@@ -53,7 +53,7 @@ export default function Homepage() {
 
 				</div>
 
-				<Footer />
+				<Footer/>
 			</div>
 		</>
 	)
