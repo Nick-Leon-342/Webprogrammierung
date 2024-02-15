@@ -17,7 +17,7 @@ export default function ÜberUns() {
 
 					<div className='site-content'>
 
-						<h1 style={{ margin: '0', paddingTop: '100px' }}>Über uns</h1>
+						<h1 style={{ margin: '0', paddingTop: '150px' }}>Über uns</h1>
 
 						<p style={{ textAlign: 'justify' }}>
 

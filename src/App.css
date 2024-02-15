@@ -29,11 +29,14 @@ input {
 	border: 1px solid var(--navbar-color);
 	border-radius: 5px;
 	padding: 4px 7px;
+	font-size: 20px;
 }
 
-#root {
-	min-height: 100vh;
-}
+
+
+
+
+/* __________________________________________________Site__________________________________________________ */
 
 .site {
 	margin: 0;
@@ -43,6 +46,7 @@ input {
 	min-height: 100vh;
 	padding-right: var(--padding);
 	padding-left: var(--padding);
+	font-size: 20px;
 }
 
 .site-content {
@@ -50,6 +54,10 @@ input {
 }
 
 
+
+
+
+/* __________________________________________________Navbar__________________________________________________ */
 
 .navbar {
 	height: 40px;
@@ -95,6 +103,9 @@ input {
 
 
 
+
+/* __________________________________________________Footer__________________________________________________ */
+
 .footer {
 	height: var(--footer-height);
 	bottom: 0px;
@@ -124,6 +135,56 @@ input {
 
 
 
+
+/* __________________________________________________Homepage__________________________________________________ */
+
+.welcome {
+	font-family: cursive; 
+	justify-content: center;
+	width: 100%;
+	display: flex;
+	margin-top: 200px;
+	color: var(--color-light);
+	margin-bottom: 0;
+}
+
+.zumschtis {
+	font-family: cursive; 
+	justify-content: center; 
+	width: 100%; 
+	display: flex;
+	font-size: 100px; 
+	margin: 0;
+	padding: 0;
+}
+
+.columns {
+	margin-top: 200px;
+	display: flex;
+	justify-content: space-evenly;
+	gap: 20px;
+}
+
+.column {
+	border-radius: 20px;
+	padding: 30px;
+	width: 500px;
+	background-color: rgba(250, 250, 250, .7);
+}
+
+.visit-button {
+	background: none;
+	border: none;
+	font-size: 20px;
+	color: green;
+	cursor: pointer;
+}
+
+
+
+
+
+/* __________________________________________________Carousel__________________________________________________ */
 
 .carousel {
 	height: 500px;
@@ -204,28 +265,28 @@ input {
 
 
 
+/* __________________________________________________Menu__________________________________________________ */
+
+.menu-category {
+	margin: 40px 0;
+}
+  
+.menu-item {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+}
+  
+.menu-item:last-child {
+	border-bottom: none;
+}
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ____________________Button____________________ */
+/* __________________________________________________Button__________________________________________________ */
 
 .button {
 	font-size: 20px;
@@ -255,7 +316,7 @@ input {
 
 
 
-/* ____________________Input____________________ */
+/* __________________________________________________Input__________________________________________________ */
 
 .inputfield {
 	position: relative;
@@ -268,7 +329,6 @@ input {
 .inputfield input {
 	width: 408px;
 	height: 30px;
-	font-size: 20px;
 	color: var(--navbar-color);
     padding: 15px 20px;
     background: transparent;

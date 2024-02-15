@@ -56,6 +56,10 @@ export default function Veranstaltungen() {
 
 	const [ currentSlide, setCurrentSlide ] = useState(0)
     
+
+
+
+	
     return (
 		<>
 		

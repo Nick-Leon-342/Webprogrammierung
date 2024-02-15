@@ -13,9 +13,8 @@ export default function Impressum() {
 
 			<div className='site'>
 
-				<div className='site-content'>
-					<h1 style={{ marginBottom: '20px', marginTop: '125px' }}>
-					{/* <h1 style={{ marginBottom: '20px'}}> */}
+				<div className='site-content' style={{ padding: '0 300px' }}>
+					<h1 style={{ marginBottom: '20px', marginTop: '200px' }}>
 						Impressum
 					</h1>
 

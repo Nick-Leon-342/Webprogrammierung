@@ -16,8 +16,8 @@ export default function Reservierung() {
 	const [ email, setEmail ] = useState()
 	const [ phone, setPhone ] = useState()
 
-	const [ numberOfPeople, setNumberOfPeople ] = useState()
 	const [ date, setDate ] = useState()
+	const [ numberOfPeople, setNumberOfPeople ] = useState()
 
 
 
@@ -104,6 +104,8 @@ export default function Reservierung() {
 								>Anzahl an Personen:</label>
 							<input 
 								type='number' 
+								value={numberOfPeople}
+								onChange={(e) => setNumberOfPeople(e.target.value)}
 								min={1}
 								style={{ 
 									outline: 'none', 

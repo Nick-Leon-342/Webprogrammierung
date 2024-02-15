@@ -47,6 +47,42 @@ export default function Lieferservice() {
 		setList_orders(tmp)
 	}
 
+	const handleSend = () => {
+
+		//Eingaben überprüfen
+		if(!firstName || !lastName || !phone || !street || !houseNumber || !postcode || !city || list_orders.length <= 0) {
+			window.alert('Bitte alles ausfüllen!')
+		}
+
+		for(const e of list_orders) {
+			if(!e.OrderNR) {
+				return window.alert('Bitte alle Nummern der Bestellung angeben!')
+			}
+		}
+
+		//JSON für das Backend erstellen
+		const json = {
+			firstName,
+			lastName,
+			phone,
+			street, 
+			houseNumber, 
+			postcode, 
+			city, 
+			list_orders
+		}
+
+
+
+
+
+
+		//
+
+
+
+	}
+
 
 
 
@@ -97,13 +133,13 @@ export default function Lieferservice() {
 							{list_orders.map((le, index) => (
 								<li className='list_orders-element' key={index}>
 									<div onClick={() => remove(index)}>-</div>
-									<input type='number' placeholder='Nr' value={le.OrderNR} onChange={(e) => le.OrderNR = e.target.value}/>
+									<input type='number' min={0} placeholder='Nr' value={le.OrderNR} onChange={(e) => le.OrderNR = e.target.value}/>
 									<input type='text' placeholder='Bemerkungen' value={le.AdditionalInfo} onChange={(e) => handleChange(e.target.value, le.ID)}/>
 								</li>
 							))}
 						</ul>
 
-						<button className='button'>Bestellung abschicken</button>
+						<button className='button' onClick={handleChange}>Bestellung abschicken</button>
 
 					</div>
 
