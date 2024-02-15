@@ -3,8 +3,6 @@
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
-import Team from '../pics/Team.jpg'
-
 
 export default function ÜberUns() {
     
@@ -12,14 +10,14 @@ export default function ÜberUns() {
         <>
             <Navbar/>
 
-            <div className='site' style={{ backgroundImage: `url(${Team})`, backgroundSize: 'cover' }}>
-				<div style={{ backgroundColor: 'rgba(250, 250, 250, .7)', padding: '0 100px', margin: '0' }}>
+            <div className='site überuns'>
+				<div className='überuns-content'>
 
 					<div className='site-content'>
 
-						<h1 style={{ margin: '0', paddingTop: '150px' }}>Über uns</h1>
+						<h1>Über uns</h1>
 
-						<p style={{ textAlign: 'justify' }}>
+						<p>
 
 							Willkommen bei Zum Sch'tis - dem Ort, an dem Gastfreundschaft auf kulinarische Abenteuer trifft!<br/><br/>
 

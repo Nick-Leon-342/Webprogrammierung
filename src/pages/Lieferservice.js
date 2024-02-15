@@ -110,7 +110,7 @@ export default function Lieferservice() {
 
 			<div className='site'>
 
-				<div className='site-content' style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+				<div className='site-content lieferservice-content'>
 
 
 					<div className='lieferservice'>
@@ -123,19 +123,19 @@ export default function Lieferservice() {
 						</div>
 
 						<div className='lieferservice-container'>
-							<input type='number' placeholder='Telefonnummer' style={{ width: '100%' }} value={phone} onChange={(e) => setPhone(e.target.value)}/>
+							<input type='number' placeholder='Telefonnummer' value={phone} onChange={(e) => setPhone(e.target.value)}/>
 						</div>
 						
 						<br/>
 
 						<div className='lieferservice-container'>
-							<input placeholder='Straße' style={{ width: '100%' }} value={street} onChange={(e) => setStreet(e.target.value)}/>
-							<input type='number' placeholder='Nr' style={{ width: '50px' }} value={houseNumber} onChange={(e) => setHouseNumber(e.target.value)}/>
+							<input placeholder='Straße' value={street} onChange={(e) => setStreet(e.target.value)}/>
+							<input type='number' placeholder='Nr' value={houseNumber} onChange={(e) => setHouseNumber(e.target.value)}/>
 						</div>
 
 						<div className='lieferservice-container'>
-							<input placeholder='Postleitzahl' style={{ width: '105px' }} value={postcode} onChange={(e) => setPostcode(e.target.value)}/>
-							<input placeholder='Ort' style={{ width: '100%' }} value={city} onChange={(e) => setCity(e.target.value)}/>
+							<input placeholder='Postleitzahl' value={postcode} onChange={(e) => setPostcode(e.target.value)}/>
+							<input placeholder='Ort' value={city} onChange={(e) => setCity(e.target.value)}/>
 						</div>
 
 						<br/>

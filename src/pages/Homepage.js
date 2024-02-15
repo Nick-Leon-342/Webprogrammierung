@@ -7,8 +7,6 @@ import { useNavigate } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
-import HomepageBackground from '../pics/Homepage-background.jpg'
-
 
 export default function Homepage() {
 
@@ -22,7 +20,7 @@ export default function Homepage() {
 
 			<Navbar dark={true}/>
 			
-			<div className='site' style={{ backgroundImage: `url(${HomepageBackground})`, backgroundSize: 'cover' }}>
+			<div className='site homepage'>
 
 				<div className='site-content'>
 

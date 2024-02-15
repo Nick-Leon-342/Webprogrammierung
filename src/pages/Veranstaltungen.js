@@ -68,7 +68,7 @@ export default function Veranstaltungen() {
 		
 			<Navbar dark={true}/>
 			
-			<div className='site' style={{ backgroundColor: 'black' }}>
+			<div className='site veranstaltungen'>
 
 				<div className='site-content'>
 					<div className='carousel'>

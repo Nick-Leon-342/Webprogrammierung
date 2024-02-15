@@ -69,10 +69,10 @@ export default function Reservierung() {
 
 			<div className='site'>
 
-				<div className='site-content' style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+				<div className='site-content reservierung-content'>
 
 
-					<div style={{ display: 'flex', flexDirection: 'column' }}>
+					<div className='reservierung'>
 
 						<h1>Reservierung</h1>
 
@@ -113,46 +113,23 @@ export default function Reservierung() {
 							isRequired={true}
 						/>
 
-						<div 
-							style={{ 
-								display: 'flex', 
-								justifyContent: 'space-between',
-								padding: '10px 1px 15px 1px' 
-							}}
-						>
-							<label 
-								style={{ 
-									fontSize: '20px', 
-									color: 'var(--navbar-color)' 
-									}}
-								>Datum:</label>
+						<div className='reservierung-container'>
+
+							<label>Datum:</label>
 							<DatePicker selected={date} onChange={(date) => setDate(date)}/>
+
 						</div>
 
-						<div 
-							style={{ 
-								display: 'flex', 
-								justifyContent: 'space-between',
-								padding: '0px 1px 10px 1px' 
-							}}
-						>
-							<label 
-								style={{ 
-									fontSize: '20px', 
-									color: 'var(--navbar-color)' 
-									}}
-								>Anzahl an Personen:</label>
+						<div className='reservierung-container'>
+
+							<label>Anzahl an Personen:</label>
 							<input 
 								type='number' 
 								value={numberOfPeople}
 								onChange={(e) => setNumberOfPeople(e.target.value)}
 								min={1}
-								style={{ 
-									outline: 'none', 
-									width: '50px', 
-									color: 'var(--navbar-color)' 
-								}}
 							/>
+
 						</div>
 
 						<button onClick={send} className='button'>Reservierung abschicken</button>

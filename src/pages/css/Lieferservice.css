@@ -1,5 +1,12 @@
 
 
+.lieferservice-content {
+	display: flex; 
+	flex-direction: column; 
+	justify-content: center; 
+	align-items: center;
+}
+
 .lieferservice {
 	display: flex; 
 	flex-direction: column;
@@ -77,5 +84,28 @@
 }
 
 .list_orders-element input[type=text] {
+	width: 100%;
+}
+
+
+
+
+.lieferservice-container input[placeholder=Telefonnummer] {
+	width: 100%;
+}
+
+.lieferservice-container input[placeholder=Straße] {
+	width: 100%;
+}
+
+.lieferservice-container input[placeholder=Nr] {
+	width: 50px;
+}
+
+.lieferservice-container input[placeholder=Postleitzahl] {
+	width: 105px;
+}
+
+.lieferservice-container input[placeholder=Ort] {
 	width: 100%;
 }

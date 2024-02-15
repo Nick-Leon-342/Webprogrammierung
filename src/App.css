@@ -138,6 +138,11 @@ input {
 
 /* __________________________________________________Homepage__________________________________________________ */
 
+.homepage {
+	background-image: url(./pics/Homepage-background.jpg);
+	background-size: cover;
+}
+
 .welcome {
 	font-family: cursive; 
 	justify-content: center;
@@ -184,10 +189,125 @@ input {
 
 
 
-/* __________________________________________________Carousel__________________________________________________ */
+/* __________________________________________________Impressum__________________________________________________ */
+
+.impressum {
+	padding: 0 300px;
+}
+
+.impressum h1 {
+	margin-bottom: 20px;
+	margin-top: 200px;
+}
+
+
+
+
+
+/* __________________________________________________Impressum__________________________________________________ */
+
+.reservierung-content {
+	display: flex; 
+	flex-direction: column; 
+	justify-content: center; 
+	align-items: center;
+}
+
+.reservierung {
+	display: flex; 
+	flex-direction: column;
+}
+
+.reservierung-container {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 1px 10px 1px;
+}
+
+.reservierung-container label {
+	font-size: 20px; 
+	color: var(--navbar-color);
+}
+
+.reservierung-container input[type=number] {
+	outline: none;
+	width: 50px; 
+	color: var(--navbar-color);
+}
+
+
+
+
+
+/* __________________________________________________Speisekarte__________________________________________________ */
+
+.speisekarte {
+	background-image: url(./pics/Speisekarte.jpg);
+	background-size: cover;
+}
+
+.speisekarte-content {
+	padding: 100px 400px; 
+	color: var(--color-light);
+}
+
+.speisekarte-content h1 {
+	margin-bottom: 50px;
+}
+
+.menu-category {
+	margin: 40px 0;
+}
+  
+.menu-item {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+}
+  
+.menu-item:last-child {
+	border-bottom: none;
+}
+
+
+
+
+
+/* __________________________________________________Speisekarte__________________________________________________ */
+
+.überuns {
+	background-image: url(./pics/Team.jpg); 
+	background-size: cover;
+}
+
+.überuns-content {
+	background-color: rgba(250, 250, 250, .7);
+	padding: 0 100px;
+	margin: 0;
+}
+
+.überuns-content h1 {
+	margin: 0; 
+	padding-top: 150px;
+}
+
+.überuns-content p {
+	text-align: justify;
+}
+
+
+
+
+
+/* __________________________________________________Veranstaltungen__________________________________________________ */
+
+.veranstaltungen {
+	background-color: black;
+}
 
 .carousel {
-	height: 500px;
+	height: 80vh;
 	position: relative;
 	list-style: none;
 	margin-top: 50px;
@@ -259,27 +379,6 @@ input {
 	color: var(--color-light);
 	margin-bottom: 100px;
 	font-size: 20px;
-}
-
-
-
-
-
-/* __________________________________________________Menu__________________________________________________ */
-
-.menu-category {
-	margin: 40px 0;
-}
-  
-.menu-item {
-	display: flex;
-	justify-content: space-between;
-	padding: 10px;
-	border-bottom: 1px solid #ccc;
-}
-  
-.menu-item:last-child {
-	border-bottom: none;
 }
 
 

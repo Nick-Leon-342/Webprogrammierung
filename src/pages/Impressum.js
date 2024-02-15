@@ -13,12 +13,12 @@ export default function Impressum() {
 
 			<div className='site'>
 
-				<div className='site-content' style={{ padding: '0 300px' }}>
-					<h1 style={{ marginBottom: '20px', marginTop: '200px' }}>
+				<div className='site-content impressum'>
+					<h1>
 						Impressum
 					</h1>
 
-					<p className='impressum'>
+					<p>
 						Zum Sch'tis<br/><br/>
 
 						Kekkusstraße 21<br/>

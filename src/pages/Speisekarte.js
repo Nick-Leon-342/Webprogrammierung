@@ -3,8 +3,6 @@
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 
-import SpeisekarteBackground from '../pics/Speisekarte.jpg'
-
 
 export default function Speisekarte() {
     
@@ -106,11 +104,11 @@ export default function Speisekarte() {
         <>
             <Navbar dark={true}/>
 
-			<div className='site' style={{ backgroundImage: `url(${SpeisekarteBackground})`, backgroundSize: 'cover' }}>
+			<div className='site speisekarte'>
 
-				<div className='site-content' style={{ padding: '100px 400px', color: 'var(--color-light)' }}>
+				<div className='site-content speisekarte-content'>
 
-					<h1 style={{ marginBottom: '50px' }}>Speisekarte</h1>
+					<h1>Speisekarte</h1>
 
 					{menuData.map((category, index) => (
 						<MenuCategory key={index} {...category} />
