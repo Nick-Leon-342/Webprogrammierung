@@ -13,7 +13,7 @@ export default function ÜberUns() {
             <Navbar/>
 
             <div className='site' style={{ backgroundImage: `url(${Team})`, backgroundSize: 'cover' }}>
-				<div style={{ backgroundColor: 'rgba(250, 250, 250, .7)', padding: '0 10px', margin: '0' }}>
+				<div style={{ backgroundColor: 'rgba(250, 250, 250, .7)', padding: '0 100px', margin: '0' }}>
 
 					<div className='site-content'>
 
